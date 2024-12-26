@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Academic Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="photo-frame">
+                <img id="dynamic-photo" src="" alt="Profile Photo">
+            </div>
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>
+                English: Hi, I'm [Your Name] <br>
+                中文: 你好，我是[Your Name] <br>
+                Svenska: Hej, jag heter [Your Name] <br>
+                Bahasa Indonesia: Halo, saya [Your Name]
+            </p>
+            <p>[your.email@example.com]</p>
+            <div class="links">
+                <a href="vitae.pdf">Vitae</a> · <a href="bio.html">Bio</a> · <a href="fun.html">Fun</a>
+            </div>
+            <div class="icons">
+                <a href="https://github.com/username"><img src="icons8-github.gif" alt="GitHub"></a>
+                <a href="mailto:your.email@example.com"><img src="icons8-email.gif" alt="Email"></a>
+                <a href="https://linkedin.com/in/username"><img src="icons8-linkedin.gif" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>About Me</h2>
+            <p>
+                I'm a PhD student at [Your University], advised by [Advisor Name]. I'm interested in [Your Research Interests].
+                Previously, I completed my master's at [University] and my undergraduate at [University].
+            </p>
+
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li><strong>2025-01-14</strong> - Oral presentation at [Conference]</li>
+                <li><strong>2024-12-14</strong> - Co-organizing [Workshop] at [Event]</li>
+                <li><strong>2024-11-12</strong> - Presenting at [Conference]</li>
+            </ul>
+
+            <h3>Past News</h3>
+            <ul>
+                <li><strong>2024-10-23</strong> - Invited talk at [Event]</li>
+                <li><strong>2024-07-27</strong> - Co-organized [Workshop]</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="anime-icon">
+        <div class="tenor-gif-embed" data-postid="4915308" data-share-method="host" data-aspect-ratio="1.5" data-width="100%"><a href="https://tenor.com/view/studio-ghibli-kiki-gif-4915308">Studio Ghibli GIF</a> from <a href="https://tenor.com/search/studio-gifs">Studio GIFs</a></div> 
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+
+    <script>
+        // Dynamic photo loading on page load
+        const photos = ['IMG_6617.jpeg', 'IMG_6734.jpeg', 'IMG_7712.jpeg'];
+        const randomIndex = Math.floor(Math.random() * photos.length);
+        document.getElementById('dynamic-photo').src = photos[randomIndex];
+    </script>
+</body>
+</html>
